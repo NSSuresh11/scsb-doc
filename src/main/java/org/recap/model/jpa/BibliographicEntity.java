@@ -1,9 +1,18 @@
 package org.recap.model.jpa;
 
-import jakarta.persistence.*;
 import lombok.Data;
 import org.recap.ScsbCommonConstants;
 
+import jakarta.persistence.AttributeOverride;
+import jakarta.persistence.CascadeType;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.JoinColumn;
+import jakarta.persistence.JoinTable;
+import jakarta.persistence.ManyToMany;
+import jakarta.persistence.ManyToOne;
+import jakarta.persistence.NamedNativeQuery;
+import jakarta.persistence.Table;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,10 +38,6 @@ import java.util.List;
                         "BIBLIOGRAPHIC_T.OWNING_INST_BIB_ID = :owningInstitutionBibId AND BIBLIOGRAPHIC_T.OWNING_INST_ID = :owningInstitutionId",
                 resultClass = ItemEntity.class)
 public class BibliographicEntity extends BibliographicAbstractEntity {
-
-    @Version
-    @Column(name = "VERSION", nullable = false)
-    private Long version;
 
     @ManyToOne(cascade = CascadeType.ALL)
     @JoinColumn(name = "OWNING_INST_ID", insertable = false, updatable = false)
