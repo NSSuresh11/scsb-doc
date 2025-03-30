@@ -295,10 +295,6 @@ public class BibJSONUtil extends MarcUtil {
      * @return
      */
     private Bib generateBib(BibliographicEntity bibliographicEntity) {
-        if (bibliographicEntity == null) {
-            log.error("Bib Id is null");
-            return null;
-        }
         try {
             Bib bib = new Bib();
             Integer bibliographicId = bibliographicEntity.getId();
