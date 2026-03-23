@@ -220,7 +220,8 @@ public abstract class IndexExecutorService {
                     }
                     log.info("Num of Bibs Processed and indexed to core {} on commit interval : {} ",coreName,numOfBibsProcessed);
                     log.info("Total Num of Bibs Processed and indexed to core {} : {}",coreName,totalBibsProcessed);
-                    Long solrBibCount = bibSolrCrudRepository.countByDocType(ScsbCommonConstants.BIB);
+                    //  Long solrBibCount = bibSolrCrudRepository.countByDocType(ScsbCommonConstants.BIB);
+                    Long solrBibCount = bibSolrCrudRepository.count();
                     log.info("Total number of Bibs in Solr in recap core : {}",solrBibCount);
                 }
                 log.info("Total futures executed: {}",futureCount);
@@ -323,7 +324,8 @@ public abstract class IndexExecutorService {
                     }
                     log.info("Num of Bibs Processed and indexed to core {} on commit interval : {} ",coreName,numOfBibsProcessed);
                     log.info("Total Num of Bibs Processed and indexed to core {} : {}",coreName,totalBibsProcessed);
-                    Long solrBibCount = bibSolrCrudRepository.countByDocType(ScsbCommonConstants.BIB);
+                    // Long solrBibCount = bibSolrCrudRepository.countByDocType(ScsbCommonConstants.BIB);
+                    Long solrBibCount = bibSolrCrudRepository.count();
                     log.info("Total number of Bibs in Solr in recap core : {}",solrBibCount);
                 }
                 log.info("Total futures executed: {}",futureCount);

@@ -23,7 +23,7 @@ import org.springframework.data.repository.query.DefaultParameters;
 import org.springframework.data.repository.query.QueryMethod;
 import org.springframework.data.solr.core.query.SpellcheckOptions;
 import org.springframework.data.solr.repository.*;
-import org.springframework.data.util.TypeInformation;
+import org.springframework.data.core.TypeInformation;
 import org.springframework.lang.Nullable;
 import org.springframework.util.ClassUtils;
 import org.springframework.util.CollectionUtils;

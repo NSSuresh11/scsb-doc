@@ -104,6 +104,8 @@ public interface BibSolrCrudRepository extends SolrCrudRepository<Bib, String>, 
      */
     Long countByDocType(String docType);
 
+    long count();
+
     /**
      * Deletes bib based on the given list of bib ids.
      *
