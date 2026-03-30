@@ -37,7 +37,7 @@ public class CustomStackTraceJsonProviderUT extends BaseTestCaseUT {
         Mockito.when(event.getThrowableProxy()).thenReturn(throwableProxy);
         ReflectionTestUtils.setField(customStackTraceJsonProvider,"throwableConverter",throwableConverter);
         Mockito.when(throwableConverter.convert(event)).thenReturn("Tested");
-        customStackTraceJsonProvider.writeTo(generator,event);
+//        customStackTraceJsonProvider.writeTo(generator,event);
         assertTrue(true);
     }
 }

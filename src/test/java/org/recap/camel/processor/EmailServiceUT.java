@@ -186,6 +186,11 @@ public class EmailServiceUT extends BaseTestCaseUT {
             public Message getIn() {
                 return new Message() {
                     @Override
+                    public Message newInstance() {
+                        return null;
+                    }
+
+                    @Override
                     public void reset() {
 
                     }
@@ -337,6 +342,11 @@ public class EmailServiceUT extends BaseTestCaseUT {
 
                     @Override
                     public void setPayloadForTrait(MessageTrait trait, Object object) {
+
+                    }
+
+                    @Override
+                    public void removeTrait(MessageTrait trait) {
 
                     }
                 };
