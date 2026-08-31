@@ -77,17 +77,17 @@ dependencies {
     implementation 'org.apache.camel:camel-activemq:4.18.4'
     implementation('org.apache.camel.springboot:camel-aws-s3-starter:3.8.0')
     implementation('org.apache.camel:camel-aws-s3:3.8.0')
-    implementation 'org.apache.activemq:activemq-pool:6.1.4'
-    implementation 'org.apache.activemq:activemq-broker:6.1.4'
-    implementation 'org.apache.activemq:activemq-client:6.1.4'
+    implementation 'org.apache.activemq:activemq-pool:6.2.0'
+    implementation 'org.apache.activemq:activemq-broker:6.2.0'
+    implementation 'org.apache.activemq:activemq-client:6.2.0'
     implementation 'commons-beanutils:commons-beanutils:1.11.0'
-    implementation 'org.apache.commons:commons-collections4:4.5.0'
+    implementation 'org.apache.commons:commons-collections4:4.6.0'
     implementation 'info.freelibrary:freelib-marc4j:2.6.12'
     implementation 'net.sourceforge.javacsv:javacsv:2.0'
-    implementation 'commons-codec:commons-codec:1.20.0'
-    implementation 'org.codehaus.jettison:jettison:1.5.4'
+    implementation 'commons-codec:commons-codec:1.22.1'
+    implementation 'org.codehaus.jettison:jettison:1.5.7'
     implementation 'junit:junit:4.13.2'
-    implementation('com.google.guava:guava:33.5.0-jre') {exclude module: "solr-solrj"}
+    implementation('com.google.guava:guava:33.6.0-jre') {exclude module: "solr-solrj"}
     implementation 'org.projectlombok:lombok:1.18.46'
     implementation 'io.micrometer:micrometer-registry-prometheus'
     implementation 'org.springframework.boot:spring-boot-starter-actuator'
@@ -95,13 +95,13 @@ dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-web'
     implementation("org.springframework.boot:spring-boot-starter-webmvc:4.0.7")
     implementation("org.springframework.boot:spring-boot-starter-data-solr:2.4.13")
-    implementation('org.apache.commons:commons-text:1.14.0')
+    implementation('org.apache.commons:commons-text:1.15.0')
     implementation 'net.logstash.logback:logstash-logback-encoder:9.0'
     implementation 'org.springframework.cloud:spring-cloud-starter-config'
     implementation 'org.springframework.cloud:spring-cloud-starter-bus-amqp'
-    implementation 'org.json:json:20250517'
+    implementation 'org.json:json:20260719'
     implementation 'com.google.code.gson:gson:2.14.0'
-    implementation('org.apache.poi:poi-ooxml:5.5.0');
+    implementation('org.apache.poi:poi-ooxml:5.5.1');
     implementation 'org.apache.camel:camel-jms:4.18.4'
     implementation 'io.zipkin.brave:brave:6.3.1'
     annotationProcessor 'org.projectlombok:lombok:1.18.46'
